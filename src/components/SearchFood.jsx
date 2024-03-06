@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import '../css/SearchFood.css';
 import FoodCard from './FoodCard';
@@ -31,6 +30,7 @@ function SearchFood() {
         setLoading(false);
     };
 
+    
     const foodCardClickHandler = (meal) => {
         SetSelectedMeal(meal);
         SetShowFoodDetails(true) // visar fooddetails när ett foodcard är clicked
