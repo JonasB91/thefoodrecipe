@@ -1,0 +1,28 @@
+* 
+{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.header-container {
+    background-image: url(../assets/BannerIMG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    height: 15vh;
+}
+
+.header {
+    padding-top: 6vh;
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-right: 5vw;
+    
+}
