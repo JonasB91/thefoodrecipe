@@ -39,10 +39,18 @@ function FoodDetails( { meal, onClose } ) {
         </div>
         {mealDetails && (
           <>
-          <p className="category">Category: {mealDetails.strCategory}</p>
-          <p className="area">Area: {mealDetails.strArea}</p>
-          <p className="instructions">Instructions: {mealDetails.strInstructions}</p>
-          <h4>Ingredients:</h4>
+          <div>
+          <p className="category">Food Category - {mealDetails.strCategory}</p>
+          </div>
+          <div className="country-container">
+          <p className="area">Country - {mealDetails.strArea}</p>
+          </div>
+          <h3 className="instruction-title">How to make this meal - Instructions below!</h3>
+          <div className="instructions-container">
+          <p> <br /> {mealDetails.strInstructions}</p>
+          </div>
+          <h4 className="ingredient-title">Ingredients:</h4>
+          <div className="ingredient-container">
           <ul>
             {Object.keys(mealDetails)
               .filter(key => key.startsWith('strIngredient') && mealDetails[key])
@@ -50,6 +58,7 @@ function FoodDetails( { meal, onClose } ) {
                 <li key={key}>{mealDetails[key]} - {mealDetails[`strMeasure${key.slice(-1)}`]}</li>
               ))}
           </ul>
+          </div>
           </>
         )}
     </div>

@@ -56,3 +56,43 @@ justify-content: center;
     border-radius: 10px; 
     object-fit: cover;
 }
+
+.area {
+    font-size: 24px;
+    color: black;
+}
+
+.country-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 4vh;
+}
+
+.instructions-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1vh;
+    font-size: 17px;
+}
+
+.instruction-title {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.ingredient-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 17px;
+}
+
+.ingredient-title {
+    margin-top: 3vh;
+    text-align: center;
+    font-size: 22px;
+}
+
